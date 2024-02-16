@@ -420,8 +420,6 @@ fig.show()
 
 # In[81]:
 
-
-weighted_ave_deliverytime
 average_leadtime_vendor = df.groupby('Vendor')['Lead_Time'].mean().reset_index()
 average_leadtime_vendor = average_leadtime_vendor.rename(columns = {'Lead_Time' : 'Mean Lead Time'})
 
